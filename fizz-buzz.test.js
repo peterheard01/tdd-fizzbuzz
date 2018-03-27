@@ -25,6 +25,14 @@ it('Should Return buzz for multiple of 5',
         assert.deepEqual(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz"], returnValue);
     });
 
+it('Should Return fizzbuzz for 15',
+    () => {
+        //start here
+        let fbObj = new FizzBuzz(1,15);
+        var returnValue = fbObj.calculate();
+        assert.deepEqual(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizzbuzz"], returnValue);
+    });
+
 
 
 

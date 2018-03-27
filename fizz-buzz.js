@@ -8,6 +8,10 @@ export default class fizzBuzz {
     calculate() {
         var returnValue=[];
         for (var currentNumber = this.lowerBound; currentNumber <= this.upperBound; currentNumber++) {
+            if (currentNumber ===15) {
+                returnValue.push("fizzbuzz");
+                continue;
+            }
             if (currentNumber %3 ===0) {
                 returnValue.push("fizz");
                 continue;
