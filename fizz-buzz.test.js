@@ -31,6 +31,13 @@ it('Should 1,5 Return string array [1,2,fizz,4,buzz]',
         var returnValue = fbObj.calculate();
         assert.deepEqual(["1","2","fizz","4","buzz"], returnValue);
     });
+it('Should 1,6 Return string array [1,2,fizz,4,buzz,fizz]',
+    () => {
+        //start here
+        let fbObj = new FizzBuzz(1,6);
+        var returnValue = fbObj.calculate();
+        assert.deepEqual(["1","2","fizz","4","buzz","fizz"], returnValue);
+    });
 
 
 

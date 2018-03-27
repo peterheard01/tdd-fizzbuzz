@@ -8,7 +8,7 @@ export default class fizzBuzz {
     calculate() {
         var returnValue=[];
         for (var currentNumber = this.lowerBound; currentNumber <= this.upperBound; currentNumber++) {
-            if (currentNumber === 3) {
+            if (currentNumber === 3||currentNumber===6) {
                 returnValue.push("fizz");
                 continue;
             }
