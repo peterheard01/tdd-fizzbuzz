@@ -3,29 +3,23 @@ export default class fizzBuzz {
     constructor(lowerBound, upperBound) {
         this.lowerBound = lowerBound;
         this.upperBound = upperBound;
+        this.returnValue = [];
     }
 
     calculate() {
-        var returnValue = [];
+
         for (var currentNumber = this.lowerBound; currentNumber <= this.upperBound; currentNumber++) {
-            if (currentNumber % 15 === 0) {
-                returnValue.push("fizzbuzz");
-                continue;
-            }
+            var valueToPush = "";
             if (currentNumber % 3 === 0) {
-                returnValue.push("fizz");
-                continue;
+                valueToPush = "fizz";
             }
             if (currentNumber % 5 === 0) {
-                returnValue.push("buzz");
-                continue;
+                valueToPush += "buzz";
             }
-            returnValue.push(currentNumber.toString());
+            this.returnValue.push((valueToPush === "") ? currentNumber.toString() : valueToPush);
         }
-        return returnValue;
+        return this.returnValue;
     }
-
-
 }
 
 
