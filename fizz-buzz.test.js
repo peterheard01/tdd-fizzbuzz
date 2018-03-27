@@ -33,6 +33,14 @@ it('Should Return fizzbuzz for multiple of 15',
         assert.deepEqual(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizzbuzz"], returnValue);
     });
 
+it('Reverse Array',
+    () => {
+        //start here
+        let fbObj = new FizzBuzz(1,15);
+        var returnValue = fbObj.reverseAndDelete();
+        assert.deepEqual(["15","14","13","12","11","10","9","8","7","6","5","4","3","2","1"], returnValue);
+    });
+
 
 
 

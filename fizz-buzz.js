@@ -20,6 +20,18 @@ export default class fizzBuzz {
         }
         return this.returnValue;
     }
+
+    reverseAndDelete() {
+        this.calculate();
+        for (var index = 0; index < this.returnValue.length; index++) {
+            if (this.returnValue[index] === "fizz"
+                || this.returnValue[index] === "buzz"
+                || this.returnValue[index] === "fizzbuzz") {
+                this.returnValue[index] = index + 1;
+            }
+        }
+        return this.returnValue.reverse();
+    }
 }
 
 
