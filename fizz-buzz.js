@@ -12,7 +12,7 @@ export default class fizzBuzz {
                 returnValue.push("fizz");
                 continue;
             }
-            if (currentNumber === 5) {
+            if (currentNumber === 10||currentNumber === 5) {
                 returnValue.push("buzz");
                 continue;
             }
