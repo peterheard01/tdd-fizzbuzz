@@ -16,14 +16,6 @@ it('Should 1,2 Return string array [1,2]',
         assert.deepEqual(["1","2"], returnValue);
     });
 
-it('Should 1,3 Return string array [1,2,fizz]',
-    () => {
-        //start here
-        let fbObj = new FizzBuzz(1,3);
-        var returnValue = fbObj.calculate();
-        assert.deepEqual(["1","2","fizz"], returnValue);
-    });
-
 it('Should 1,5 Return string array [1,2,fizz,4,buzz]',
     () => {
         //start here
