@@ -12,6 +12,10 @@ export default class fizzBuzz {
                 returnValue.push("fizz");
                 continue;
             }
+            if (currentNumber === 5) {
+                returnValue.push("buzz");
+                continue;
+            }
             returnValue.push(currentNumber.toString());
         }
         return returnValue;
