@@ -4,19 +4,19 @@ export default class fizzBuzz {
         this.lowerBound = lowerBound;
         this.upperBound = upperBound;
     }
-    
+
     calculate() {
-        var returnValue=[];
+        var returnValue = [];
         for (var currentNumber = this.lowerBound; currentNumber <= this.upperBound; currentNumber++) {
-            if (currentNumber ===30||currentNumber ===15) {
+            if (currentNumber % 15 === 0) {
                 returnValue.push("fizzbuzz");
                 continue;
             }
-            if (currentNumber %3 ===0) {
+            if (currentNumber % 3 === 0) {
                 returnValue.push("fizz");
                 continue;
             }
-            if (currentNumber%5 === 0) {
+            if (currentNumber % 5 === 0) {
                 returnValue.push("buzz");
                 continue;
             }
@@ -24,8 +24,8 @@ export default class fizzBuzz {
         }
         return returnValue;
     }
-    
-    
+
+
 }
 
 
